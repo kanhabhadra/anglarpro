@@ -1,0 +1,27 @@
+<h1>hi kanha</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form [formGroup]='signupForm'>
+                <div class="form-group">
+                    <input type='text' placeholder="first name"  formControlName="fname">
+                </div>
+                <div class="form-group">
+                   <br>
+                    <input type='text' placeholder="last name"  formControlName="lname">
+                </div>
+                <div class="form-group">
+                  <br>
+                    <input type='email ' placeholder="name@gmail.com"   formControlName="ename">
+                </div>
+                <button type="button" (click)="postData()">postdata</button>
+                <button type="button" (click)="reset()">reset</button>
+                <button type="button" (click)="filldata()">filldata</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div>
+<router-outlet></router-outlet>
+</div>
